@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+	<script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <!-- Load feeding_data_to_the_machine.js after the content of the page -->
+	<button id="class-a">feed machine , slot 1</button>
+    <button id="class-b">feed machine , slot 2</button>
+    <button id="class-c">feed machine , slot 3</button>
+	<button id="class-d">feed machine , slot 4</button>
+	
+    <script src="feeding_data_to_the_machine.js"></script>
+  </body>
+</html>
